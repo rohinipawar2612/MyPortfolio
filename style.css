@@ -616,3 +616,395 @@ footer p {
         width: 100%;
     }
 }
+
+
+/* Mobile Navigation */
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #222;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header nav a {
+        color: white;
+    }
+}
+
+/* =================================
+   DARK / LIGHT MODE
+================================= */
+
+/* LIGHT MODE */
+
+body:not(.dark-mode) {
+    background: #ffffff;
+    color: #222222;
+}
+
+/* Navbar */
+
+body:not(.dark-mode) header {
+    background: #ffffff;
+    border-bottom: 1px solid #dddddd;
+}
+
+body:not(.dark-mode) .logo {
+    color: #222222;
+}
+
+body:not(.dark-mode) nav a {
+    color: #333333;
+}
+
+/* Home */
+
+body:not(.dark-mode) #home {
+    background: radial-gradient(
+        circle at 80% 40%,
+        #e9ddff,
+        #ffffff 55%
+    );
+}
+
+body:not(.dark-mode) .hero-text h1,
+body:not(.dark-mode) .hero-text h2 {
+    color: #222222;
+}
+
+body:not(.dark-mode) .hero-text > p:not(.intro) {
+    color: #555555;
+}
+
+/* Other Sections */
+
+body:not(.dark-mode) #about,
+body:not(.dark-mode) #education,
+body:not(.dark-mode) #internship {
+    background: #f5f5fa;
+}
+
+body:not(.dark-mode) #skills,
+body:not(.dark-mode) #contact {
+    background: #ffffff;
+}
+
+/* Cards */
+
+body:not(.dark-mode) .about-box,
+body:not(.dark-mode) .education-box,
+body:not(.dark-mode) .skill-card,
+body:not(.dark-mode) .internship-content,
+body:not(.dark-mode) .contact-container {
+    background: #ffffff;
+    border-color: #dddddd;
+}
+
+/* Light Mode Text */
+
+body:not(.dark-mode) .about-box h3,
+body:not(.dark-mode) .education-box h3,
+body:not(.dark-mode) .skill-card h3,
+body:not(.dark-mode) .internship-content h3,
+body:not(.dark-mode) .contact-container h3,
+body:not(.dark-mode) .details strong,
+body:not(.dark-mode) .details span {
+    color: #222222;
+}
+
+body:not(.dark-mode) .about-box p,
+body:not(.dark-mode) .education-box p,
+body:not(.dark-mode) .education-box span,
+body:not(.dark-mode) .skill-card p,
+body:not(.dark-mode) .internship-content p {
+    color: #555555;
+}
+
+body:not(.dark-mode) .heading p {
+    color: #8055d6;
+}
+
+body:not(.dark-mode) .heading h2 {
+    color: #222222;
+}
+
+body:not(.dark-mode) .heading h2 span,
+body:not(.dark-mode) .hero-text h1 span {
+    color: #8055d6;
+}
+
+/* Contact */
+
+body:not(.dark-mode) .contact-container a {
+    color: #7040c9;
+}
+
+body:not(.dark-mode) .contact-container input,
+body:not(.dark-mode) .contact-container textarea {
+    background: #ffffff;
+    color: #222222;
+    border-color: #cccccc;
+}
+
+body:not(.dark-mode) .contact-container input::placeholder,
+body:not(.dark-mode) .contact-container textarea::placeholder {
+    color: #777777;
+}
+
+/* Footer */
+
+body:not(.dark-mode) footer {
+    background: #eeeeF5;
+    color: #222222;
+}
+
+body:not(.dark-mode) footer p {
+    color: #555555;
+}
+
+
+/* =================================
+   DARK MODE
+================================= */
+
+body.dark-mode {
+    background: #080b16;
+    color: white;
+}
+
+body.dark-mode header {
+    background: #080b16;
+    border-bottom: 1px solid #25263b;
+}
+
+body.dark-mode .logo {
+    color: white;
+}
+
+body.dark-mode nav a {
+    color: #cbd5e1;
+}
+
+/* Home Purple Gradient */
+
+body.dark-mode #home {
+    background: radial-gradient(
+        circle at 80% 40%,
+        #28204c,
+        #080b16 45%
+    );
+}
+
+body.dark-mode .hero-text h1,
+body.dark-mode .hero-text h2 {
+    color: white;
+}
+
+body.dark-mode .hero-text h1 span {
+    color: #a78bfa;
+}
+
+body.dark-mode .hero-text > p:not(.intro) {
+    color: #94a3b8;
+}
+
+/* Dark Sections */
+
+body.dark-mode #about,
+body.dark-mode #education,
+body.dark-mode #internship {
+    background: #0d1222;
+}
+
+body.dark-mode #skills,
+body.dark-mode #contact {
+    background: #080b16;
+}
+
+/* Dark Cards */
+
+body.dark-mode .about-box,
+body.dark-mode .education-box,
+body.dark-mode .skill-card,
+body.dark-mode .internship-content,
+body.dark-mode .contact-container {
+    background: #111729;
+    border-color: #292b40;
+}
+
+/* Dark Text */
+
+body.dark-mode .about-box h3,
+body.dark-mode .education-box h3,
+body.dark-mode .skill-card h3,
+body.dark-mode .internship-content h3,
+body.dark-mode .contact-container h3 {
+    color: white;
+}
+
+body.dark-mode .about-box p,
+body.dark-mode .education-box p,
+body.dark-mode .education-box span,
+body.dark-mode .skill-card p,
+body.dark-mode .internship-content p {
+    color: #94a3b8;
+}
+
+body.dark-mode .heading h2 {
+    color: white;
+}
+
+body.dark-mode .heading p,
+body.dark-mode .details strong {
+    color: #c4b5fd;
+}
+
+body.dark-mode .details span {
+    color: #cbd5e1;
+}
+
+/* Dark Contact */
+
+body.dark-mode .contact-container a {
+    color: #c4b5fd;
+}
+
+body.dark-mode .contact-container input,
+body.dark-mode .contact-container textarea {
+    background: #080b16;
+    color: white;
+    border-color: #292b40;
+}
+
+body.dark-mode .contact-container input::placeholder,
+body.dark-mode .contact-container textarea::placeholder {
+    color: #94a3b8;
+}
+
+/* Dark Footer */
+
+body.dark-mode footer {
+    background: #060914;
+    color: white;
+}
+
+body.dark-mode footer p {
+    color: #94a3b8;
+}
+
+
+/* =================================
+   SMOOTH TRANSITION
+================================= */
+
+body,
+header,
+section,
+.about-box,
+.education-box,
+.skill-card,
+.internship-content,
+.contact-container,
+footer {
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+
+/* Theme Button */
+
+.theme-btn {
+    cursor: pointer;
+    font-size: 22px;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    padding: 10px;
+    background: transparent;
+}
+
+
+/* ===== SCROLL ANIMATIONS ===== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease,
+                transform 0.8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation for reduced motion preference */
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* ===== CONTACT FORM VALIDATION ===== */
+
+#form-error {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+#form-success {
+    color: #22c55e;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0;
+    text-align: left;
+}
+
+/* Invalid Input */
+.contact-container input.invalid,
+.contact-container textarea.invalid {
+    border: 2px solid #ff4d4d;
+}
+
+/* Valid Input */
+.contact-container input.valid,
+.contact-container textarea.valid {
+    border: 2px solid #22c55e;
+}
+
+/* Light Mode */
+body:not(.dark-mode) #form-error {
+    color: #dc2626;
+}
+
+body:not(.dark-mode) #form-success {
+    color: #16a34a;
+}
