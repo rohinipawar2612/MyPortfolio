@@ -1008,3 +1008,250 @@ body:not(.dark-mode) #form-error {
 body:not(.dark-mode) #form-success {
     color: #16a34a;
 }
+
+
+/* ===== PROJECTS SECTION ===== */
+
+#projects {
+    background: #080b16;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+}
+
+.project-card {
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    margin: 0 auto;
+    background: #111729;
+    border: 1px solid #292b40;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    border-color: #8b5cf6;
+    box-shadow: 0 8px 25px #4c328b33;
+}
+
+.project-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.project-card p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.project-card h4 {
+    color: #c4b5fd;
+    margin-bottom: 8px;
+}
+
+.project-card .project-tech {
+    color: #94a3b8;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.project-links a,
+.resume-button a {
+    display: inline-block;
+    padding: 11px 22px;
+    background: #8b5cf6;
+    color: white;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.project-links a:hover,
+.resume-button a:hover {
+    background: #7040d9;
+    transform: translateY(-3px);
+}
+
+/* ===== RESUME BUTTON ===== */
+
+.resume-button {
+    margin-top: 25px;
+}
+
+.resume-button a {
+    text-decoration: none;
+}
+
+/* ===== LIGHT MODE ===== */
+
+body:not(.dark-mode) #projects {
+    background: #ffffff;
+}
+
+body:not(.dark-mode) .project-card {
+    background: #ffffff;
+    border-color: #dddddd;
+}
+
+body:not(.dark-mode) .project-card h3 {
+    color: #222222;
+}
+
+body:not(.dark-mode) .project-card p {
+    color: #555555;
+}
+
+body:not(.dark-mode) .project-card h4 {
+    color: #8055d6;
+}
+
+/* ===== PROJECTS RESPONSIVE ===== */
+
+@media (max-width: 700px) {
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 25px;
+    }
+}
+
+/* =================================
+   PROFESSIONAL PROJECT & RESUME DESIGN
+================================= */
+
+/* Project Card Improvements */
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+.project-card h3 {
+    line-height: 1.5;
+}
+
+.project-card .project-tech {
+    line-height: 1.8;
+}
+
+/* Project Buttons */
+
+.project-links a {
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.project-links a:first-child {
+    background: #8b5cf6;
+    color: #ffffff;
+}
+
+.project-links a:last-child {
+    background: transparent;
+    color: #a78bfa;
+    border-color: #8b5cf6;
+}
+
+.project-links a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(139, 92, 246, 0.25);
+}
+
+.project-links a:last-child:hover {
+    background: #8b5cf6;
+    color: #ffffff;
+}
+
+/* Resume Button */
+
+.resume-button a {
+    padding: 13px 26px;
+    border: 1px solid #a78bfa;
+    box-shadow: 0 5px 18px rgba(139, 92, 246, 0.2);
+}
+
+.resume-button a:hover {
+    box-shadow: 0 8px 22px rgba(139, 92, 246, 0.35);
+}
+
+/* Education Card Improvements */
+
+.education-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.education-box:hover {
+    box-shadow: 0 8px 22px rgba(139, 92, 246, 0.15);
+}
+
+.education-box h3 {
+    line-height: 1.5;
+}
+
+.education-box span {
+    overflow-wrap: anywhere;
+}
+
+/* Light Mode Improvements */
+
+body:not(.dark-mode) .education-box h4 {
+    color: #8055d6;
+}
+
+body:not(.dark-mode) .project-links a:last-child {
+    color: #7040c9;
+    border-color: #8055d6;
+}
+
+body:not(.dark-mode) .project-links a:last-child:hover {
+    background: #8055d6;
+    color: white;
+}
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+    .project-card {
+        max-width: 100%;
+    }
+
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-links a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .education-box {
+        min-height: auto;
+    }
+}
